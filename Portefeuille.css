@@ -1,0 +1,288 @@
+:root {
+  --color-background: white; /* Couleur d'arrière-plan */
+  --color-border: #6b21a8; /* Couleur de la bordure */
+  --color-primary: #6b21a8; /* Couleur principale */
+  --color-secondary: whitesmoke; /* Couleur secondaire */
+  --color-text: #666; /* Couleur du texte */
+}
+
+body {
+  font-family: "Poppins", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+  color: var(--color-text);
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Section principale */
+.main-container {
+  width: 1000px;
+  background-color: var(--color-background);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.title span {
+  color: var(--color-primary);
+}
+
+/* Barre latérale gauche */
+.sidebar {
+  position: absolute;
+  left: 0;
+  top: 25%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Icônes de la barre latérale gauche */
+.ri-settings-3-fill,
+.ri-moon-line {
+  background-color: var(--color-secondary);
+  border: none;
+  padding: 15px;
+  color: var(--color-text);
+  font-size: 25px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.ri-menu-line {
+  visibility: hidden;
+}
+
+/* Barre latérale droite */
+.right-sidebar {
+  position: absolute;
+  right: 1%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  column-count: 1;
+  gap: 15px;
+  float: right;
+}
+
+.right-sidebar a {
+  display: inline-flex;
+  text-decoration: none;
+  margin: 0 auto;
+  cursor: pointer;
+  color: var(--color-background);
+}
+
+.right-sidebar a:hover {
+  border-radius: 35px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  color: var(--color-background);
+  background-color: var(--color-primary);
+  padding-left: 10px;
+}
+
+.ri-home-4-fill,
+.ri-user-fill,
+.ri-folder-open-fill,
+.ri-mail-open-fill {
+  background-color: var(--color-secondary);
+  color: var(--color-text);
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.ri-home-4-fill:hover,
+.ri-user-fill:hover,
+.ri-folder-open-fill:hover,
+.ri-mail-open-fill:hover {
+  background-color: var(--color-primary);
+  color: var(--color-background);
+}
+
+/* Styles pour le conteneur d'image */
+.image-container {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+}
+
+/* Styles pour les images */
+.image-container img {
+  width: 250px;
+  height: 200px;
+  margin: 30px;
+  border-radius: 10px;
+  transition: 0.3s ease; /* Transition pour le zoom et le fondu */
+  opacity: 0; /* Commence invisible */
+  animation: fadeIn 0.5s forwards; /* Animation d'apparition */
+}
+
+/* Animation d'apparition */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Effet de zoom et de déplacement léger au survol */
+.image-container img:hover {
+  transform: scale(1.1) translateY(-5px); /* Zoom de 10% et déplacement vers le haut de 5px */
+}
+
+/* Styles pour le texte superposé */
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Ajuster pour centrer parfaitement */
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  opacity: 0; /* Commence invisible */
+  transition: 0.3s ease; /* Transition pour l'apparition */
+}
+
+/* Afficher le texte au survol */
+.image-container:hover .overlay {
+  opacity: 1; /* Rendre le texte visible */
+}
+
+/* Media Queries pour la responsivité */
+/*sm*/
+@media (max-width: 768px) {
+  .main-container {
+    width: 100%; /* Prendre toute la largeur */
+    padding: 10px; /* Ajouter un peu de padding */
+  }
+  .title {
+    font-size: 28px; /* Réduire la taille de la police pour les petits appareils */
+  }
+  .ri-menu-line {
+    visibility: visible;
+    position: absolute;
+    right: 1%;
+    top: 2%;
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 2%;
+  }
+
+  .sidebar {
+    position: absolute;
+    left: 0;
+    top: 10%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Réduit l'espace entre les éléments */
+  }
+
+  .right-sidebar {
+    right: 5%; /* Ajuster la position de la barre latérale droite */
+    visibility: hidden;
+  }
+
+  .ri-settings-3-fill,
+  .ri-moon-line {
+    font-size: 20px; /* Réduire la taille des icônes */
+  }
+
+  .image-container img {
+    width: 100%; /* Rendre les images responsives */
+    height: auto; /* Ajuster la hauteur automatiquement */
+    margin: 10px 0; /* Réduire la marge */
+  }
+
+  .overlay {
+    padding: 5px; /* Réduire le padding de l'overlay */
+  }
+  .ri-home-4-fill,
+  .ri-user-fill,
+  .ri-folder-open-fill,
+  .ri-mail-open-fill {
+    visibility: hidden;
+  }
+
+  .right-sidebar {
+    visibility: hidden;
+  }
+
+  .image-container {
+    margin: 5px; /* Réduire la marge autour des images */
+  }
+}
+
+/* md */
+@media (min-width: 770px) and (max-width: 1024px) {
+  .main-container {
+    width: 90%; /* Réduire la largeur */
+  }
+  .title {
+    font-size: 32px; /* Réduire la taille de la police */
+  }
+  .sidebar {
+    position: absolute;
+    left: 0;
+    top: 10%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Réduit l'espace entre les éléments */
+  }
+  .right-sidebar {
+    visibility: hidden;
+  }
+  .ri-menu-line {
+    visibility: visible;
+    position: absolute;
+    right: 1%;
+    top: 2%;
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 2%;
+  }
+  .ri-home-4-fill,
+  .ri-user-fill,
+  .ri-folder-open-fill,
+  .ri-mail-open-fill {
+    visibility: hidden;
+  }
+
+  .image-container img {
+    width: 280px;
+    height: 200px;
+  }
+}

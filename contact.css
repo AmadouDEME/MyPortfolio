@@ -1,0 +1,771 @@
+:root {
+  --color-primary: #6b21a8; /* Couleur principale */
+  --color-secondary: whitesmoke; /* Couleur secondaire */
+  --color-text: #666; /* Couleur du texte */
+  --color-background: white; /* Couleur d'arrière-plan */
+  --color-border: #6b21a8; /* Couleur de la bordure */
+}
+
+body {
+  font-family: "Poppins", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+  color: var(--color-text);
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Section principale */
+.main-container {
+  width: 1000px;
+  background-color: var(--color-background);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.title span {
+  color: var(--color-primary);
+}
+
+/* Container */
+.info {
+  width: 350px;
+  display: block;
+  justify-content: space-between;
+  flex-direction: column;
+  top: 30%;
+  position: absolute;
+  text-align: justify;
+  font-size: 16px;
+}
+
+.info h2 {
+  text-align: justify;
+  color: var(--color-text);
+}
+
+#ri-mail-open-f {
+  color: var(--color-primary);
+  margin: 5px;
+  padding: 3px;
+  border-radius: 10%;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.ri-phone-fill {
+  color: var(--color-background);
+  background-color: var(--color-primary);
+  margin: 10px;
+  padding: 5px;
+  border-radius: 10%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.span {
+  margin-left: 14%;
+  font-weight: lighter;
+}
+
+.reseau {
+  display: flex;
+  font-size: 20px;
+  gap: 15px;
+}
+
+.ri-linkedin-box-fill,
+.ri-github-fill,
+.ri-facebook-fill,
+.ri-instagram-line {
+  background-color: var(--color-secondary);
+  margin: 5px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+/* Formulaire */
+.form {
+  display: flex;
+  width: 750px;
+  justify-content: space-between;
+  flex-direction: column;
+  position: absolute;
+  left: 40%;
+  top: 30%;
+  font-size: 16px;
+}
+
+.form input {
+  padding: 16px 12px;
+  margin: 10px;
+  border: none;
+  outline-color: var(--color-primary);
+  background-color: var(--color-secondary);
+  border-radius: 35px;
+}
+.form textarea {
+  padding: 16px 230px 12px 50px;
+  margin: 10px;
+  border: none;
+  outline-color: var(--color-primary);
+  background-color: var(--color-secondary);
+  border-radius: 35px;
+}
+
+#send a {
+  display: block;
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  padding: 15px 70px 15px 35px;
+  margin-bottom: 5%;
+  margin-top: 3%;
+  width: 155px;
+  height: 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  overflow: hidden;
+  border-radius: 35px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
+
+#send a:hover {
+  font-size: 18px;
+  color: var(--color-background);
+  background-color: var(--color-primary);
+}
+
+.ri-send-plane-fill {
+  background-color: var(--color-primary);
+  font-size: 18px;
+  text-align: center;
+  line-height: 60px;
+  inset-block: -2px;
+  font-weight: bold;
+  color: var(--color-background);
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  width: 55px;
+}
+
+/* Barre latérale droite */
+.ri-menu-line {
+  visibility: hidden;
+}
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 25%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ri-settings-3-fill,
+.ri-moon-line {
+  background-color: var(--color-secondary);
+  border: none;
+  padding: 15px;
+  color: var(--color-text);
+  font-size: 25px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+/* Barre latérale droite */
+.right-sidebar {
+  position: fixed;
+  right: 1%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  column-count: 1;
+  gap: 15px;
+  float: right;
+}
+
+.right-sidebar a {
+  display: inline-flex;
+  text-decoration: none;
+  margin: 0 auto;
+  cursor: pointer;
+  color: var(--color-background);
+}
+
+.right-sidebar a:hover {
+  border-radius: 35px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  color: var(--color-background);
+  background-color: var(--color-primary);
+  padding-left: 10px;
+}
+
+.ri-home-4-fill,
+.ri-user-fill,
+.ri-folder-open-fill,
+#ri-mail-open-fill {
+  background-color: var(--color-secondary);
+  color: var(--color-text);
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.ri-home-4-fill:hover,
+.ri-user-fill:hover,
+.ri-folder-open-fill:hover,
+#ri-mail-open-fill:hover {
+  background-color: var(--color-primary);
+  color: var(--color-background);
+}
+/*sm*/
+@media (max-width: 768px) {
+  body {
+    font-family: "Poppins", "Franklin Gothic Medium", "Arial Narrow", Arial,
+      sans-serif;
+    color: var(--color-text);
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  /* Section principale */
+  .main-container {
+    width: 100%;
+    height: auto;
+    background-color: var(--color-background);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-top: 10%;
+  }
+
+  .title span {
+    color: var(--color-primary);
+  }
+
+  /* Container */
+  .info {
+    width: 60%;
+    height: 100%;
+    display: block;
+    justify-content: space-between;
+    flex-direction: column;
+    top: 20%;
+    position: absolute;
+    text-align: justify;
+    font-size: 18px;
+  }
+
+  .info h2 {
+    text-align: justify;
+    color: var(--color-text);
+  }
+
+  #ri-mail-open-f {
+    color: var(--color-primary);
+    margin: 5px;
+    padding: 3px;
+    border-radius: 10%;
+    font-size: 36px;
+    font-weight: bolder;
+  }
+
+  .ri-phone-fill {
+    color: var(--color-background);
+    background-color: var(--color-primary);
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10%;
+    font-size: 25px;
+    font-weight: bolder;
+  }
+
+  .span {
+    margin-left: 14%;
+    font-weight: lighter;
+  }
+
+  .reseau {
+    display: flex;
+    font-size: 24px;
+    gap: 15px;
+  }
+
+  .ri-linkedin-box-fill,
+  .ri-github-fill,
+  .ri-facebook-fill,
+  .ri-instagram-line {
+    background-color: var(--color-secondary);
+    margin: 5px;
+    padding: 10px;
+    border-radius: 50%;
+  }
+
+  /* Formulaire */
+  .form {
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+    flex-direction: column;
+    position: absolute;
+    left: 3%;
+    top: 82%;
+    font-size: 16px;
+  }
+
+  .form input {
+    padding: 16px 12px;
+    margin: 10px;
+    border: none;
+    outline-color: var(--color-primary);
+    background-color: var(--color-secondary);
+    border-radius: 35px;
+  }
+  .form textarea {
+    padding: 16px 5px 12px 5px;
+    margin: 10px 5px 10px 10px;
+    border: none;
+    outline-color: var(--color-primary);
+    background-color: var(--color-secondary);
+    border-radius: 35px;
+  }
+
+  #send a {
+    display: block;
+    color: var(--color-text);
+    border: 1px solid var(--color-border);
+    padding: 15px 70px 15px 35px;
+    margin-bottom: 50%;
+    margin-top: 3%;
+    width: 130px;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    overflow: hidden;
+    border-radius: 35px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+  }
+
+  #send a:hover {
+    font-size: 15px;
+    color: var(--color-background);
+    background-color: var(--color-primary);
+  }
+
+  .ri-send-plane-fill {
+    background-color: var(--color-primary);
+    font-size: 18px;
+    text-align: center;
+    line-height: 60px;
+    inset-block: -2px;
+    font-weight: bold;
+    color: var(--color-background);
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    width: 55px;
+  }
+
+  /* Barre latérale gauche */
+
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: 25%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .ri-settings-3-fill,
+  .ri-moon-line {
+    background-color: var(--color-secondary);
+    border: none;
+    padding: 15px;
+    color: var(--color-text);
+    font-size: 20px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-weight: bolder;
+  }
+
+  /* Barre latérale droite */
+  .right-sidebar {
+    position: fixed;
+    right: 1%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    column-count: 1;
+    gap: 15px;
+    float: right;
+  }
+  .ri-menu-line {
+    visibility: visible;
+    position: absolute;
+    right: 1%;
+    top: 2%;
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 2%;
+  }
+
+  .right-sidebar a {
+    display: inline-flex;
+    text-decoration: none;
+    margin: 0 auto;
+    cursor: pointer;
+    color: var(--color-background);
+    visibility: hidden;
+  }
+
+  .right-sidebar a:hover {
+    border-radius: 35px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    color: var(--color-background);
+    background-color: var(--color-primary);
+    padding-left: 10px;
+  }
+
+  .ri-home-4-fill,
+  .ri-user-fill,
+  .ri-folder-open-fill,
+  #ri-mail-open-fill {
+    background-color: var(--color-secondary);
+    color: var(--color-text);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    visibility: hidden;
+  }
+
+  .ri-home-4-fill:hover,
+  .ri-user-fill:hover,
+  .ri-folder-open-fill:hover,
+  #ri-mail-open-fill:hover {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+  }
+}
+
+/* md */
+@media (min-width: 770px) and (max-width: 1024px) {
+  body {
+    font-family: "Poppins", "Franklin Gothic Medium", "Arial Narrow", Arial,
+      sans-serif;
+    color: var(--color-text);
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  /* Section principale */
+  .main-container {
+    width: 100%;
+    height: auto;
+    background-color: var(--color-background);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-top: 10%;
+  }
+
+  .title span {
+    color: var(--color-primary);
+  }
+
+  /* Container */
+  .info {
+    width: 60%;
+    height: 100%;
+    display: block;
+    justify-content: space-between;
+    flex-direction: column;
+    top: 20%;
+    position: absolute;
+    text-align: justify;
+    font-size: 18px;
+  }
+
+  .info h2 {
+    text-align: justify;
+    color: var(--color-text);
+  }
+
+  #ri-mail-open-f {
+    color: var(--color-primary);
+    margin: 5px;
+    padding: 3px;
+    border-radius: 10%;
+    font-size: 36px;
+    font-weight: bolder;
+  }
+
+  .ri-phone-fill {
+    color: var(--color-background);
+    background-color: var(--color-primary);
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10%;
+    font-size: 25px;
+    font-weight: bolder;
+  }
+
+  .span {
+    margin-left: 14%;
+    font-weight: lighter;
+  }
+
+  .reseau {
+    display: flex;
+    font-size: 24px;
+    gap: 15px;
+  }
+
+  .ri-linkedin-box-fill,
+  .ri-github-fill,
+  .ri-facebook-fill,
+  .ri-instagram-line {
+    background-color: var(--color-secondary);
+    margin: 5px;
+    padding: 10px;
+    border-radius: 50%;
+  }
+
+  /* Formulaire */
+  .form {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    font-size: 16px;
+  }
+
+  .form input {
+    padding: 16px 12px;
+    margin: 10px;
+    border: none;
+    outline-color: var(--color-primary);
+    background-color: var(--color-secondary);
+    border-radius: 35px;
+  }
+  .form textarea {
+    padding: 16px 230px 12px 25px;
+    margin: 10px 5px 10px 10px;
+    border: none;
+    outline-color: var(--color-primary);
+    background-color: var(--color-secondary);
+    border-radius: 35px;
+  }
+
+  #send a {
+    display: block;
+    color: var(--color-text);
+    border: 1px solid var(--color-border);
+    padding: 15px 70px 15px 35px;
+    margin-bottom: 5%;
+    margin-top: 3%;
+    width: 155px;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    overflow: hidden;
+    border-radius: 35px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+  }
+
+  #send a:hover {
+    font-size: 18px;
+    color: var(--color-background);
+    background-color: var(--color-primary);
+  }
+
+  .ri-send-plane-fill {
+    background-color: var(--color-primary);
+    font-size: 18px;
+    text-align: center;
+    line-height: 60px;
+    inset-block: -2px;
+    font-weight: bold;
+    color: var(--color-background);
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    width: 55px;
+  }
+
+  /* Barre latérale gauche */
+
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: 25%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .ri-settings-3-fill,
+  .ri-moon-line {
+    background-color: var(--color-secondary);
+    border: none;
+    padding: 15px;
+    color: var(--color-text);
+    font-size: 30px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-weight: bolder;
+  }
+
+  /* Barre latérale droite */
+  .right-sidebar {
+    position: fixed;
+    right: 1%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    column-count: 1;
+    gap: 15px;
+    float: right;
+  }
+  .ri-menu-line {
+    visibility: visible;
+    position: absolute;
+    right: 1%;
+    top: 2%;
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 2%;
+  }
+
+  .right-sidebar a {
+    display: inline-flex;
+    text-decoration: none;
+    margin: 0 auto;
+    cursor: pointer;
+    color: var(--color-background);
+    visibility: hidden;
+  }
+
+  .right-sidebar a:hover {
+    border-radius: 35px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    color: var(--color-background);
+    background-color: var(--color-primary);
+    padding-left: 10px;
+  }
+
+  .ri-home-4-fill,
+  .ri-user-fill,
+  .ri-folder-open-fill,
+  #ri-mail-open-fill {
+    background-color: var(--color-secondary);
+    color: var(--color-text);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    visibility: hidden;
+  }
+
+  .ri-home-4-fill:hover,
+  .ri-user-fill:hover,
+  .ri-folder-open-fill:hover,
+  #ri-mail-open-fill:hover {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+  }
+}
