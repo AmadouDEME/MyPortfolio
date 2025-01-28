@@ -249,12 +249,14 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 20px;
+  margin-right: 10px;
   cursor: pointer;
 }
 
 .ri-user-fill:hover {
   background-color: var(--primary-color);
   color: var(--hover-color);
+  margin-right: 10px;
 }
 
 .ri-folder-open-fill {
@@ -268,6 +270,8 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 20px;
+  margin-right: 25px;
+  padding-right: 0px;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -275,6 +279,7 @@ body {
 .ri-folder-open-fill:hover {
   background-color: var(--primary-color);
   color: var(--hover-color);
+  margin-right: 25px;
 }
 
 .ri-mail-open-fill {
