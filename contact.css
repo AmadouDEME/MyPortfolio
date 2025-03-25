@@ -438,7 +438,7 @@ body {
   .right-sidebar {
     position: fixed;
     right: 1%;
-    top: 50%;
+    top: 30%;
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
@@ -449,8 +449,8 @@ body {
   .ri-menu-line {
     visibility: visible;
     position: absolute;
-    right: 1%;
-    top: 2%;
+    right: 2%;
+    top: 5%;
     color: var(--color-primary);
     background-color: var(--color-secondary);
     font-size: 30px;
@@ -463,7 +463,7 @@ body {
     text-decoration: none;
     margin: 0 auto;
     cursor: pointer;
-    color: var(--color-background);
+    color: var(--color-text);
     visibility: hidden;
   }
 

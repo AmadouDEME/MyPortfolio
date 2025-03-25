@@ -462,30 +462,34 @@ body {
   .right-sidebar {
     position: absolute;
     right: 1%;
-    top: 15%;
+    top: 20%;
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: auto;
   }
+  
   .ri-menu-line {
     visibility: visible;
     position: absolute;
-    right: 0;
+    right: 1%;
+    top: 2%;
     color: var(--primary-color);
     background-color: var(--background-color);
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bolder;
-    padding: 10%;
+    padding: 2%;
   }
 
   .right-sidebar a {
     display: inline-flex;
     text-decoration: none;
-    margin: 0 auto;
+    margin-top: 10px;
     cursor: pointer;
-    color: var(--hover-color);
     visibility: hidden;
+    color: var(--secondary-color);
+  
   }
 
   .right-sidebar a:hover {
@@ -494,12 +498,8 @@ body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    transform: scale(1.1);
-    transition: all 0.3s ease-in-out;
     position: relative;
-    color: var(--hover-color);
-    background-color: var(--primary-color);
-    padding: 5px; /* Réduit le padding */
+    color: white;
   }
 
   .ri-home-4-fill,

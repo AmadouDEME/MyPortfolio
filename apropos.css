@@ -284,6 +284,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  color: #9e8c9d;
 }
 
 /* Cercle de progression */
@@ -466,68 +467,43 @@ body {
   .box {
     visibility: hidden;
     display: block;
-    top: 10%;
+    right: 1%;
+    top: 15%;
     flex-direction: column;
     gap: 10%;
   }
   .ri-menu-line {
     visibility: visible;
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 0%;
+    top: 0%;
     color: var(--main-color);
     background-color: var(--light-background);
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bolder;
     padding: 2%;
   }
-  /*  .box-all {
-    border: 2px solid var(--light-background);
-    width: 100%; 
-    height: auto; 
-    margin-bottom: 10%; 
-    padding: 10px; 
-    border-radius: 5%;
-  }
-
-  .box-all p span {
-    background-color: var(--secondary-color);
-    margin: 4%;
-    padding: 0 10px; 
-    font-size: 12px;
-  }
-
-  .box-all p {
-    font-size: 16px; 
-  }
-
-  .box-all h2 {
-    font-size: 24px;
-    margin: 10px;
-    color: var(--main-color);
-    font-weight: bold;
-  }
-
+  
   /* Barre latérale droite */
-  /* .right-sidebar {
+  .right-sidebar {
     position: fixed;
-    right: 1%;
-    top: 50%;
+    right: 2%;
+    top: 27%;
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
     gap: 10px; 
   }
 
-  */
+ 
   .right-sidebar a {
     display: inline-flex;
     text-decoration: none;
     margin: 0 auto;
     cursor: pointer;
-    color: white;
+    color: var(--secondary-color);
     visibility: hidden;
-  } /*
+  } 
 
   .right-sidebar a:hover {
     border-radius: 35px;
@@ -542,7 +518,7 @@ body {
     background-color: var(--main-color);
   }
 
-  */
+ 
   .ri-home-4-fill,
   .ri-user-fill,
   .ri-folder-open-fill,

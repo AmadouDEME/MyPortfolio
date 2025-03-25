@@ -197,20 +197,37 @@ body {
     font-weight: bolder;
     padding: 2%;
   }
-
-  .sidebar {
+  .right-sidebar {
     position: absolute;
-    left: 0;
-    top: 10%;
+    right: 1%;
+    top: 25%;
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Réduit l'espace entre les éléments */
+    gap: 10px;
+    width: auto;
   }
 
-  .right-sidebar {
-    right: 5%; /* Ajuster la position de la barre latérale droite */
+
+  .right-sidebar a {
+    display: inline-flex;
+    text-decoration: none;
+    margin: 0 auto;
+    cursor: pointer;
     visibility: hidden;
+    color: var(--secondary-color);
+  
+  }
+
+  .right-sidebar a:hover {
+    border-radius: 35px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    color: white;
+    margin: 0;
   }
 
   .ri-settings-3-fill,
