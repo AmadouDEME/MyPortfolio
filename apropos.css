@@ -503,6 +503,7 @@ body {
     cursor: pointer;
     color: var(--secondary-color);
     visibility: hidden;
+    font-weight: bold;
   } 
 
   .right-sidebar a:hover {

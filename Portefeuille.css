@@ -216,6 +216,7 @@ body {
     cursor: pointer;
     visibility: hidden;
     color: var(--secondary-color);
+    font-weight: bold;
   
   }
 

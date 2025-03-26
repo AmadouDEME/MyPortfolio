@@ -465,6 +465,7 @@ body {
     cursor: pointer;
     color: var(--color-text);
     visibility: hidden;
+    font-weight: bold;
   }
 
   .right-sidebar a:hover {

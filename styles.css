@@ -489,6 +489,7 @@ body {
     cursor: pointer;
     visibility: hidden;
     color: var(--secondary-color);
+    font-weight: bold;
   
   }
 
@@ -719,6 +720,7 @@ body {
     cursor: pointer;
     color: var(--hover-color);
     visibility: hidden;
+    font-weight: bold;
   }
 
   .right-sidebar a:hover {
